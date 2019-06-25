@@ -51,6 +51,10 @@ const styles = theme => ({
   },
 
   link: { margin: theme.spacing(2.5) },
+  bottomLink: {
+    marginTop: theme.spacing(2.5),
+    marginBottom: theme.spacing(1.5),
+  },
 
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -92,7 +96,7 @@ class DirectoryIndex extends Component {
                   <hr className={classes.divider} />
 
                   <Typography variant="h5" color="textPrimary">
-                    <Link href="https://trains.astoria.app">
+                    <Link className={classes.link} href="https://trains.astoria.app">
                       N/W Train Times
                     </Link>
                   </Typography>
@@ -125,7 +129,7 @@ class DirectoryIndex extends Component {
 
                   <hr className={classes.shortDivider} />
 
-                  <Typography className={classes.link} variant="h5" color="textPrimary">
+                  <Typography className={classes.bottomLink} variant="h5" color="textPrimary">
                     <Link href="https://meetup.astoria.app">
                       Join our Slack
                     </Link>
