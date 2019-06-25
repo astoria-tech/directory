@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  client:
+    labels:
+      shipyard.route: '/'
+    build: 'client'
+    volumes:
+      - ./client/src:/srv/src
+    ports:
+      - '3000:3000'
+
+volumes:
+  postgres:
