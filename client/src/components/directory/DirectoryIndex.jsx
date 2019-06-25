@@ -130,8 +130,8 @@ class DirectoryIndex extends Component {
                   <hr className={classes.shortDivider} />
 
                   <Typography className={classes.bottomLink} variant="h5" color="textPrimary">
-                    <Link href="https://meetup.astoria.app">
-                      Join our Slack
+                    <Link href="https://astoriaarc.slack.com/join/shared_invite/enQtNTc3MDQ2MjU5NDYwLWRmNmZlZTc3Yzg3MTI0NGI0MzFhZmM2NjM1ZmRiY2Q2Y2M4MDM2ODgyMDdlNjY1NzM3MTM1OTdiMjI0YTY4NGY">
+                      Join our Slack!
                     </Link>
                   </Typography>
                 </Paper>
