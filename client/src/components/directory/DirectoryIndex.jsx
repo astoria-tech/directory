@@ -112,7 +112,7 @@ class DirectoryIndex extends Component {
                   <hr className={classes.divider} />
 
                   <Typography className={classes.link} variant="h5" color="textPrimary">
-                    <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/263171543">
+                    <Link href="https://meetup.astoria.app/">
                       Next Meetup:<br/>
                       July 31st @ The Strand
                     </Link>
@@ -131,7 +131,7 @@ class DirectoryIndex extends Component {
 
                   <Typography className={classes.bottomLink} variant="h5" color="textPrimary">
                     <Link href="https://astoriaarc.slack.com/join/shared_invite/enQtNTc3MDQ2MjU5NDYwLWRmNmZlZTc3Yzg3MTI0NGI0MzFhZmM2NjM1ZmRiY2Q2Y2M4MDM2ODgyMDdlNjY1NzM3MTM1OTdiMjI0YTY4NGY">
-                      Join our Slack!
+                      Community chat on Slack
                     </Link>
                   </Typography>
                 </Paper>
