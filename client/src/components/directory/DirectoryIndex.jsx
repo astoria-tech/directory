@@ -78,9 +78,9 @@ class DirectoryIndex extends Component {
         <div className={classes.root}>
           <AppBar position="static" className={classes.appBar}>
             <Toolbar justify="center" alignItems="center">
-              <Typography variant="h5" color="inherit" noWrap>
+              <Link variant="h5" color="inherit" href="/">
                 astoria.app
-              </Typography>
+              </Link>
             </Toolbar>
           </AppBar>
 
