@@ -38,6 +38,33 @@
 
       gtag('config', 'UA-139410581-2');
     </script>
+
+    <style type="text/css" media="screen">
+      #container {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .video-container {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #videobcg {
+        width: 100vw;
+        height: 100vh;
+        -o-filter: blur(15px);
+        filter: blur(15px);
+        object-fit: cover;
+        transform: scale(1.06); /* scale up to hide the edge blur */
+        background-attachment: scroll;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -52,5 +79,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <div class="video-container">
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+    <source src="/content/astoria-resized.webm" type="video/webm">
+    Sorry, your browser does not support HTML5 video.
+    </video>
+    <div>
+
   </body>
 </html>

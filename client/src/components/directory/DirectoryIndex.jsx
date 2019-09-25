@@ -14,9 +14,13 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   root: {
+    position: 'absolute',
+    width: '100vw',
+    height: '100vh',
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
+      zIndex: 100,
   },
 
   appBar: { position: 'relative' },
@@ -30,11 +34,9 @@ const styles = theme => ({
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(3),
 
-    [theme.breakpoints.up(1100 + theme.spacing(3) * 2)]: {
-      width: 1100,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    },
+    maxWidth: 600,
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 
   divider: { margin: theme.spacing(2) },
@@ -48,6 +50,7 @@ const styles = theme => ({
     paddingTop: theme.spacing(3),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    zIndex: 1000
   },
 
   link: { margin: theme.spacing(2.5) },
@@ -76,13 +79,6 @@ class DirectoryIndex extends Component {
         <CssBaseline />
 
         <div className={classes.root}>
-          <AppBar position="static" className={classes.appBar}>
-            <Toolbar justify="center" alignItems="center">
-              <Link variant="h5" color="inherit" href="/">
-                astoria.app
-              </Link>
-            </Toolbar>
-          </AppBar>
 
           <main className={classes.main}>
             <Grid container justify="center" spacing={2}>
@@ -90,7 +86,10 @@ class DirectoryIndex extends Component {
               <Grid item xs={12} md={10}>
                 <Paper className={classes.linkContainer}>
                   <Typography variant="h4" color="textPrimary">
-                    Services
+                    Useful apps
+                  </Typography>
+                  <Typography color="textSecondary">
+                    (made by locals)
                   </Typography>
 
                   <hr className={classes.divider} />
@@ -106,7 +105,7 @@ class DirectoryIndex extends Component {
               <Grid item xs={12} md={10}>
                 <Paper className={classes.linkContainer}>
                   <Typography variant="h4" color="textPrimary">
-                    Astoria Tech Meetup
+                    Astoria Tech Group
                   </Typography>
 
                   <hr className={classes.divider} />
@@ -140,11 +139,6 @@ class DirectoryIndex extends Component {
             </Grid>
           </main>
 
-          <footer className={classes.footer}>
-            <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-              An Archipelago group.
-            </Typography>
-          </footer>
         </div>
       </React.Fragment>
     );
