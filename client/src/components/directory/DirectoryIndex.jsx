@@ -111,21 +111,18 @@ class DirectoryIndex extends Component {
                   <hr className={classes.divider} />
 
                   <Typography className={classes.link} variant="h5" color="textPrimary">
-                    <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/266401568/">
-                        Hack Day #3:<br/>
-                        Sunday, Nov 17th<br/>
-                        @ NYCBCH<br/>
-                        (30th St &amp; Broadway)
+                    <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/265892329/">
+                      Monthly Meetup #14:<br/>
+                      Weds, Nov 20th<br/>
+                      @ The Strand Smokehouse
                     </Link>
                   </Typography>
 
                   <hr className={classes.shortDivider} />
 
                   <Typography className={classes.link} variant="h5" color="textPrimary">
-                    <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/265892329/">
-                      Monthly Meetup #14:<br/>
-                      Weds, Nov 20th<br/>
-                      @ The Strand Smokehouse
+                    <Link href="https://mesh.astoria.app">
+                      Astoria Mesh Map
                     </Link>
                   </Typography>
 
