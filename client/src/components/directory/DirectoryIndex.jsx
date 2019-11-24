@@ -11,6 +11,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
+import { Link as RouterLink } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -111,6 +112,15 @@ class DirectoryIndex extends Component {
                   <hr className={classes.divider} />
 
                   <Typography className={classes.link} variant="h5" color="textPrimary">
+                    
+                    <RouterLink to='/about'>
+                      About
+                    </RouterLink>
+                  </Typography>
+
+                  <hr className={classes.shortDivider} />
+
+                  <Typography className={classes.link} variant="h5" color="textPrimary">
                     <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/265892329/">
                       Monthly Meetup #14:<br/>
                       Weds, Nov 20th<br/>
@@ -142,6 +152,23 @@ class DirectoryIndex extends Component {
                       Community chat on Slack
                     </Link>
                   </Typography>
+
+                  <hr className={classes.shortDivider} />
+
+                  <Typography className={classes.link} variant="h5" color="textPrimary">
+                    <RouterLink to='/sponsors'>
+                      Sponsors
+                    </RouterLink>
+                  </Typography>
+
+                  <hr className={classes.shortDivider} />
+
+                  <Typography className={classes.link} variant="h5" color="textPrimary">
+                    <RouterLink to="/presentations_archive">
+                      Presentations Archive
+                    </RouterLink>
+                  </Typography>
+
                 </Paper>
               </Grid>
 
