@@ -95,8 +95,19 @@ class DirectoryIndex extends Component {
                   <hr className={classes.divider} />
 
                   <Typography variant="h5" color="textPrimary">
+                  </Typography>
+
+                  <Typography className={classes.link} variant="h5" color="textPrimary">
                     <Link className={classes.link} href="https://trains.astoria.app">
                       N/W Train Times
+                    </Link>
+                  </Typography>
+
+                  <hr className={classes.shortDivider} />
+
+                  <Typography className={classes.link} variant="h5" color="textPrimary">
+                    <Link className={classes.link} href="https://vacant.astoria.app">
+                      Vacant Location Wishlists
                     </Link>
                   </Typography>
                 </Paper>
