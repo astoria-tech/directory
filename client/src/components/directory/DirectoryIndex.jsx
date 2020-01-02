@@ -122,9 +122,9 @@ class DirectoryIndex extends Component {
                   <hr className={classes.divider} />
 
                   <Typography className={classes.link} variant="h5" color="textPrimary">
-                    <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/266668634/">
-                      Monthly Meetup #15:<br/>
-                      Weds, Dec 18th<br/>
+                    <Link href="https://www.meetup.com/Astoria-Tech-Meetup/events/267419326/">
+                      Monthly Meetup #16:<br/>
+                      Weds, Jan 29th<br/>
                       @ The Strand Smokehouse
                     </Link>
                   </Typography>
